@@ -26,10 +26,10 @@ body {margin:0;}
 }
 
 .topnav a {
-  float: left;
+  float: center;
   display: block;
   color: #f2f2f2;
-  text-align: center;
+  text-align: right;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
@@ -189,6 +189,26 @@ body {font-family: Verdana,sans-serif;margin:0}
   to {opacity: 1}
 }
 
+.content-wrapper{
+width: 80%;
+margin: 0% 0% 0% 0%;
+
+  }
+
+.text-wrapper{
+width: 100%;
+position: relative;
+margin-top: -40%;
+}
+
+.text-wrapper h3{
+text-align: center;
+color: #d9d9d9;
+font-size: 5vw;
+font-family: 'Permanent Marker', cursive;
+margin: 0% -25% 0% 0%;
+}
+
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
   .prev, .next,.text {font-size: 11px}
@@ -235,7 +255,8 @@ body {
 .column {
     float: left;
     width: 33.33%;
-    padding: 15px;
+    padding: 20px;
+    text-align: center;
 }
 
 /* Clear floats after the columns */
@@ -250,4 +271,6 @@ body {
     .column {
         width: 100%;
     }
-}
+
+
+  }

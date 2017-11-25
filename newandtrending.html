@@ -11,15 +11,13 @@
 <body>
     <header>
       <div class="topnav" id="myTopnav">
-  <a href="index.html" >Home</a>
-  <a href="newandtrending.html" class="active">New & Trending</a>
+  <a href="index.html">Home</a>
+  <a href="newandtrending.html"class="active">New & Trending</a>
   <a href="hotels.html">Hotels</a>
   <a href="thingstodo.html">Things to do</a>
+  <a href="https://www.expedia.co.uk/">Book your Journey today</a>
   <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
 </div>
-
-
-
 <script>
 function myFunction() {
     var x = document.getElementById("myTopnav");
@@ -32,22 +30,21 @@ function myFunction() {
 </script>
     </header>
     <div class="slideshow-container">
-
     <div class="mySlides fade">
-      <div class="numbertext">1 / 3</div>
-      <img src="img/newyorkguide.jpg" style="width:100%">
-
-    </div>
-
-    <div class="mySlides fade">
-      <div class="numbertext">2 / 3</div>
+      <div class="numbertext"></div>
       <img src="img/newyork1.jpg" style="width:100%">
 
     </div>
 
     <div class="mySlides fade">
-      <div class="numbertext">3 / 3</div>
+      <div class="numbertext"></div>
       <img src="img/newyork2.jpg" style="width:100%">
+
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext"></div>
+      <img src="img/newyork3.jpg" style="width:100%">
 
     </div>
 
@@ -103,7 +100,7 @@ function carousel() {
     slideIndex++;
     if (slideIndex > x.length) {slideIndex = 1}
     x[slideIndex-1].style.display = "block";
-    setTimeout(carousel, 2000); // Change image every 2 seconds
+    setTimeout(carousel, 5000); // Change image every 2 seconds
 }
     </script>
     <div class="row">
