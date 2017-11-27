@@ -2,7 +2,29 @@ body{
   font: 15px/1.5 Arial, Helvetica,sans-serif;
   padding:0;
   margin:0;
-  background-color:#f4f4f4;
+  background-color: #D6DBDF;
+}
+div.border {
+    width: 450px;
+    height: 600px;
+    padding: 15px;
+    background-color: ;
+    box-shadow: 10px 10px 5px #2E4053;
+    border-radius: 5%;
+}
+main{
+max-width: 1500px;
+margin: 0 auto;
+text-align: center;
+}
+
+h2{
+  color: #2E4053;
+  font-family: 'Roboto Slab', serif;
+}
+
+a{
+  font-family: 'Roboto Slab', serif;
 }
 
 .container{
@@ -16,20 +38,32 @@ ul{
   padding:0;
 }
 
+.w3-round{
+  border-radius: 5%;
+}
+
+div.border{
+  border: 20px;
+  color: black;
+}
 
 
 body {margin:0;}
 
 .topnav {
   overflow: hidden;
-  background-color: #333;
+  background-color: #2E4053;
+  max-width: 1500px;
+  margin: 0 auto;
+  list-style: none;
+  text-align: center;
 }
 
 .topnav a {
-  float: center;
+  float: left;
   display: block;
-  color: #f2f2f2;
-  text-align: right;
+  color: #ffffff;
+  text-align: center;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
@@ -90,10 +124,11 @@ header a:hover{
    left: 0;
    bottom: 0;
    width: 100%;
-   background-color: black;
+   background-color: #2E4053;
    color: white;
    text-align: center;
    padding-bottom: 10px;
+   opacity: 0%;
 }
 
 /*Start slide show*/
@@ -103,7 +138,7 @@ body {font-family: Verdana,sans-serif;margin:0}
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 100%;
+  max-width: 1500px;
   position: relative;
   margin: auto;
 
@@ -195,19 +230,6 @@ margin: 0% 0% 0% 0%;
 
   }
 
-.text-wrapper{
-width: 100%;
-position: relative;
-margin-top: -40%;
-}
-
-.text-wrapper h3{
-text-align: center;
-color: #d9d9d9;
-font-size: 5vw;
-font-family: 'Permanent Marker', cursive;
-margin: 0% -25% 0% 0%;
-}
 
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
@@ -229,27 +251,10 @@ body {
     text-align: center;
 }
 
-/* Style the top navigation bar */
-.topnav {
-    overflow: hidden;
-    background-color: #333;
-}
 
-/* Style the topnav links */
-.topnav a {
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
 
-/* Change color on hover */
-.topnav a:hover {
-    background-color: #ddd;
-    color: black;
-}
+
+
 
 /* Create three equal columns that floats next to each other */
 .column {
