@@ -2,21 +2,23 @@ body{
   font: 15px/1.5 Arial, Helvetica,sans-serif;
   padding:0;
   margin:0;
-  background-color: #D6DBDF;
+  background-color: white;
 }
+
 div.border {
-    width: 450px;
+    max-width: 450px;
     height: 600px;
     padding: 15px;
-    background-color: ;
-    box-shadow: 10px 10px 5px #2E4053;
-    border-radius: 5%;
+    background-color: #D6DBDF;
+    box-shadow: 5px 5px 5px #2E4053;
 }
+
 main{
 max-width: 1500px;
 margin: 0 auto;
 text-align: center;
 }
+
 
 h2{
   color: #2E4053;
@@ -37,16 +39,6 @@ ul{
   margin:0;
   padding:0;
 }
-
-.w3-round{
-  border-radius: 5%;
-}
-
-div.border{
-  border: 20px;
-  color: black;
-}
-
 
 body {margin:0;}
 
