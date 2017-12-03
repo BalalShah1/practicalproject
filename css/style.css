@@ -1,12 +1,10 @@
   body{
     font: 15px/1.5 Arial, Helvetica,sans-serif;
-    padding:0;
-    margin:0;
-    background-color: white;
+    background-color: #000000;
   }
 
   div.border {
-      max-width: 450px;
+      max-width: 100%;
       height: 600px;
       padding: 15px;
       background-color: #2E4053;
@@ -29,6 +27,7 @@
 
   .cardp{
     color: #D5D8DC;
+    font-size: 12px;
   }
 
 
@@ -46,6 +45,7 @@ h6 {
 
   p{
     font-size: 12px;
+
   }
 
   .container{
@@ -59,12 +59,10 @@ h6 {
     padding:0;
   }
 
-  body {margin:20px;}
-
   nav {
     overflow: hidden;
     background-color: #2E4053;
-    max-width: 1500px;
+    max-width: 100%;
     margin: 0 auto;
     list-style: none;
     text-align: center;
@@ -75,9 +73,10 @@ h6 {
     display: block;
     color: #ffffff;
     text-align: center;
-    padding: 14px 16px;
+    padding: 25px 25px;
     text-decoration: none;
     font-size: 17px;
+    letter-spacing: 2px;
   }
 
   nav a:hover {
@@ -109,6 +108,9 @@ h6 {
       right: 0;
       top: 0;
     }
+    @media screen and (max-width: 600px) {
+      p{font-size: 15px;}
+  }
     nav.responsive a {
       float: none;
       display: block;
@@ -125,22 +127,14 @@ h6 {
 
 
 
-  #mainimage h1{
-    margin-top:100px;
-    font-size:55px;
-    margin-bottom:10px;
-  }
 
   footer {
      position: bottom;
-     left: 0;
-     bottom: 0;
      width: 100%;
-     background-color: #2E4053;
-     color: white;
+     height: 400px;
+     background-color: #282828;
+     color: #E2E2E2;
      text-align: center;
-     padding-bottom: 10px;
-     opacity: 0%;
   }
 
   /*Start slide show*/
@@ -150,7 +144,7 @@ h6 {
 
   /* Slideshow container */
   .slideshow-container {
-    max-width: 1500px;
+    max-width: 100%;
     position: relative;
     margin: auto;
 
@@ -252,9 +246,6 @@ h6 {
       box-sizing: border-box;
   }
 
-  body {
-    margin: 20px;
-  }
 
   /* Style the header */
   .header {
