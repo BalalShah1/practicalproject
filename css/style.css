@@ -1,11 +1,21 @@
   body{
     font: 15px/1.5 Arial, Helvetica,sans-serif;
-    background-color: #ffffff;
+    background-color: #494949;
+    margin: 0;
+    display: table;
+    height: 100%;
+    width: 100%;
   }
+
+  .wrapper{
+    padding: 20px;
+    height: auto;
+  }
+
 
   div.border {
       max-width: 100%;
-      height: 600px;
+      height: 200px;
       padding: 15px;
       background-color: #2E4053;
       box-shadow: 5px 5px 5px #99A3A4;
@@ -39,6 +49,13 @@
   display: inline-block;
   vertical-align: top;
 }
+.content {
+    max-width: 2000px;
+    margin: 10px;
+    background: white;
+    padding: 10px;
+    text-align: center;
+}
 
 .container2{
   max-width: 960px
@@ -54,6 +71,28 @@
   height: 500px;
 }
 
+.container3{
+  max-width: 960px
+  margin: 0 auto;
+  background: #f9f9f9;
+  font-size: 24px;
+  padding: 25px;
+}
+.parallax1{
+  background-image: url(http://www.crainsnewyork.com/apps/pbcsi.dll/storyimage/CN/20130724/ECONOMY/130729951/AR/0/Wall-Street.jpg?q=100);
+  background-size: cover;
+  background-attachment: fixed;
+  height: 800px;
+}
+
+.parallax2{
+  background-image: url(https://www.hdwallpapers.in/walls/dark_newyork_city-wide.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  height: 500px;
+  max-width: 100%;
+}
+
   main{
   max-width: 100%;
   margin: 0 auto;
@@ -63,20 +102,14 @@
   padding-top: -20px;
   }
 
-  .cardp{
-    color: #D5D8DC;
-    font-size: 12px;
-    max-width: 100%;
-  }
-
   h1 {
-    color; white;
+    color: #ffffff;
     font-family: 'Bungee', cursive;
     float: left;
     margin-left: 15px;
     font-size: 25px;
     text-align: justify;
-    text-shadow: 1px 1px white;
+    text-shadow: 2px 1px black;
     font-weight: bolder;
     letter-spacing: 3px;
     word-spacing: 10px;
@@ -85,14 +118,32 @@
 
 
   h2{
-    color: #D5D8DC;
-    font-family: 'Roboto Slab', serif;
+    color: #626262;
+    font-family: 'Dosis', sans-serif;
     max-width: 100%;
+    font-size: 40px;
+    letter-spacing: 5px;
+    margin: 20px;
   }
   h3{
     color: #000000;
     font-family: 'Roboto Slab', serif;
     max-width: 100%;
+  }
+  h4{
+    font-family: 'Roboto Slab', serif;
+    max-width: 100%;
+    color: #E3E3E3;
+    font-size: 20px;
+    text-align: justify;
+  }
+
+  h5{
+    color: #ffffff;
+    font-family: 'Roboto Slab', serif;
+    max-width: 100%;
+    font-size: 20px;
+    margin: 20px;
   }
 
 h6 {
@@ -103,15 +154,20 @@ h6 {
   }
 
   p{
-    font-size: 15px;
+    font-size: 18px;
     max-width: 100%;
-    text-align: justify;
-  }
+    text-align: center;
+    color: #000000;
+    font-family: 'Poiret One', cursive;
+    font-weight: bold;
+    padding-top: 50px;
+   }
 
   .column.middle {
       width: 100%;
       padding-left: 20px;
       padding-right: 20px;
+      padding-top: 50px;
   }
 
   .trending1{
@@ -164,7 +220,6 @@ height: 250px;
     margin: 0 auto;
     list-style: none;
     text-align: center;
-    background-image: url(http://www.schooltripworld.co.uk/assets/themes/leisureworld/library/images/lw-banner-1.jpg);
     opacity: 0.8;
   }
 
@@ -196,7 +251,7 @@ height: 250px;
   @media screen and (max-width: 600px) {
     nav a:not(:first-child) {display: none;}
     nav a.icon {
-      float: left;
+      float: right;
       display: block;
     }
   }
@@ -204,7 +259,7 @@ height: 250px;
   @media screen and (max-width: 600px) {
     nav.responsive {position: relative;}
     nav.responsive .icon {
-      position: left;
+      position: right;
       right: 0;
       top: 0;
     }
@@ -229,10 +284,6 @@ height: 250px;
     color:#cccccc;
     font-weight:bold;
   }
-
-
-
-
 
   footer {
      position: bottom;
@@ -360,14 +411,9 @@ height: 250px;
       text-align: center;
   }
 
-
-
-
-
-
   /* Create three equal columns that floats next to each other */
   section {
-      float: left;
+      float: right;
       width: 33.33%;
       padding: 20px;
       text-align: center;
@@ -380,6 +426,50 @@ height: 250px;
       clear: both;
   }
 
+  div.gallery {
+      border: 0px solid #ccc;
+      border-radius: 14px;
+  }
+
+  div.gallery:hover {
+      border: 4px solid #ffffff;
+      border-radius: 14px;
+      -webkit-transform: scale(1.3);
+      -ms-transform: scale(1.3);
+      transform: scale(1.3);
+  }
+
+  div.gallery img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+  }
+  .responsive {
+      padding: 0 6px;
+      float: left;
+      width: 25%;
+  }
+
+  @media only screen and (max-width: 700px){
+      .responsive {
+          width: 49.99999%;
+          margin: 6px 0;
+      }
+  }
+
+  @media only screen and (max-width: 500px){
+      .responsive {
+          width: 100%;
+      }
+  }
+
+  .clearfix:after {
+      content: "";
+      display: table;
+      clear: both;
+  }
+
+  .
   /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
   @media (max-width:600px) {
       section {
