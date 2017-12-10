@@ -13,37 +13,43 @@
   <title>New York Guide</title>
 </head>
 <body>
-  <nav class="nav" id="mynav">
-    <h1>NYC Guide</h1>
-    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
-    <a href="index.html"  class="active" ><i class="fa fa-home fa-1.5x" aria-hidden="true"></i></a>
-    <a href="newandtrending.html">New & Trending</a>
-    <a href="thingstodo.html">Things to do</a>
-    <a href="https://www.expedia.co.uk/">Book your Journey today</a>
-    <a href="contact.html">Contact us<a/>
-    </nav>
-    <script src="javascript/nav.js"> </script>
-    <img src="img/newyork1.jpg" alt="" style="width:100%">
-<br>
-<div class="content">
+  <nav class="topnav" id="myTopnav">
+  <li style="float:right"><a class="active" href="index.html"><i class="fa fa-home fa-1.5x" aria-hidden="true"></i></a></li>
+  <a href="newandtrending.html">New & Trending</a>
+  <a href="newyeareve.html">New Year's eve</a>
+  <a href="contact.html">About Us</a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</nav>
+<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
+<img src="img/newyork1.jpg" alt="" style="width:100%">
+<main>
+  <section>
   <h2>Welcome to New York City</h2>
   <p>Epicenter of the arts. Dining and shopping capital. Trendsetter. New York City wears many crowns, and spreads an irresistible feast for all.<p>
-    <iframe style="width:100%" src="https://www.youtube.com/embed/AUuHyXguUsg?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+    <iframe style="width:100%" height="500" src="https://www.youtube.com/embed/AUuHyXguUsg?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
     <p>Start exploring New York City with Lonely Planet’s video guide to getting around, when to go and the top things to do while you're there.<p>
       <h2>Top experiences in New York City<h2>
         <img src="img/img2.jpg">
         <img src="img/img3.jpg">
         <img src="img/img4.jpg">
         <img src="img/img5.jpg">
-      </div>
+      </section>
+      </main>
       <footer>
         <br>
-        <div class="cardp">
-          <h5>University Project©</h5>
+          <h3>University Project©</h3>
           <i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i>
           <i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
           <i class="fa fa-google fa-2x" aria-hidden="true"></i></p>
-        </div>
       </footer>
     </body>
     </html>
