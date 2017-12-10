@@ -49,7 +49,7 @@ p{
 #col {
   -moz-column-count: 2;
   -webkit-column-count: 2;
-  column-count: 2;
+  margin: 0 auto;
 }
 
 /* THIRD BREAKPOINT (MOBILE SIZE) */
@@ -114,6 +114,7 @@ p{
 text-align: center;
 }
 
+
 .topnav {
   overflow: hidden;
   background-color: #333;
@@ -137,7 +138,7 @@ text-align: center;
 
 .topnav a:hover {
   background-color: #ddd;
-color: #000000;
+  color: #000000;
 }
 
 .active {
@@ -147,13 +148,13 @@ color: #000000;
 
 .topnav .icon {
   display: none;
-  float: right;
+  float: left;
 }
 
 @media screen and (max-width: 600px) {
   .topnav a:not(:first-child) {display: none;}
   .topnav a.icon {
-    float: right;
+    float: left;
     display: block;
   }
 }
@@ -256,15 +257,15 @@ div.gallery img {
   height: 800px;
 }
 .parallax2{
-  background-image:url('../img/aboutus.jpg');
-	min-height:400px;
+  background-image:url(https://media.timeout.com/images/103444978/image.jpg);
+	height: 800px;
   position: relative;
   	opacity: 0.70;
   	background-position:center;
   	background-size:cover;
   	background-repeat:no-repeat;
   	background-attachment: fixed;
-  	max-width: 100%;
+    max-width: 100%;
   	margin: 0 auto;
 }
 
@@ -282,6 +283,27 @@ div.gallery img {
     height: 500px;
 }
 
+.paratext {
+	position: absolute;
+	top: 30%;
+  left: 10%;
+	width: 100%;
+	text-align:center;
+	color: black;
+	font-size: 27px;
+	letter-spacing: 8px;
+	text-transform: uppercase;
+	font-family: 'Raleway', sans-serif;
+	max-width: 1500px;
+	margin: 0 auto;
+}
+
+.paratext .border {
+	background-color: black;
+	color: white;
+	padding: 20px;
+}
+
 #map {
    width: 100%;
    height: 400px;
@@ -295,4 +317,31 @@ footer {
   background-color: #282828;
   color: #E2E2E2;
   text-align: center;
+}
+
+.grow:hover
+{
+        -webkit-transform: scale(0.7);
+        -ms-transform: scale(0.7);
+        transform: scale(0.7);
+}
+
+.grow {
+  width:432px;
+  height:700px;
+  background:#676470;
+  transition:all 0.5s ease;
+  max-width: 100%;
+}
+
+.w3-animate-fading{
+  max-width: 100%;
+  animation:fading 5s }
+  @keyframes
+  fading{0%{opacity:0}50%{opacity:1}
+
+article {
+max-width: 1500px;
+text-align: center;
+margin: auto 0;
 }
