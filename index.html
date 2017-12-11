@@ -12,34 +12,31 @@
   <script src="https://use.fontawesome.com/cdaeee2f39.js"></script>
   <title>New York Guide</title>
 </head>
+
 <body>
   <nav class="topnav" id="myTopnav">
-  <li style="float:right"><a class="active" href="index.html"><i class="fa fa-home fa-1.5x" aria-hidden="true"></i></a></li>
+  <li style="float:right">
+    <a class="active" href="index.html">
+      <i class="fa fa-home fa-1.5x" aria-hidden="true">
+      </i>
+    </a>
+  </li>
   <a href="newandtrending.html">New & Trending</a>
   <a href="newyeareve.html">New Year's eve</a>
   <a href="contact.html">About Us</a>
   <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
 </nav>
-<script>
-function myFunction() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-        x.className += " responsive";
-    } else {
-        x.className = "topnav";
-    }
-}
-</script>
-<div class="w3-container">
-  <img class="w3-animate-fading" src="img/newyork1.jpg" style="width:100%">
+  <img class="animatefading" src="img/newyork1.jpg">
 </div>
 <main>
   <section>
   <h2>Welcome to New York City</h2>
-  <p>Epicenter of the arts. Dining and shopping capital. Trendsetter. New York City wears many crowns, and spreads an irresistible feast for all.<p>
+  <p>Epicenter of the arts. Dining and shopping capital. Trendsetter. New York City wears many crowns, and spreads an irresistible feast for all.</p>
     <iframe style="width:100%" height="500" src="https://www.youtube.com/embed/AUuHyXguUsg?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
-    <p>Start exploring New York City with Lonely Planet’s video guide to getting around, when to go and the top things to do while you're there.<p>
-      <h2>Top experiences in New York City<h2>
+    <p>Start exploring New York City with Lonely Planet’s video guide to getting around, when to go and the top things to do while you're there.</p>
+      <a href="https://www.expedia.co.uk/"><h1>Book your flight today!</h1> </a>
+      <h2>Top experiences in New York City</h2>
+        <!--
           <div id="col">
         <img src="img/img2.jpg">
       </div>
@@ -57,14 +54,59 @@ function myFunction() {
       <div class="grow">
         <img src="img/img5.jpg">
       </div>
+    -->
       </section>
       </main>
       <footer>
         <br>
-          <h3>University Project©</h3>
-          <i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i>
-          <i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
-          <i class="fa fa-google fa-2x" aria-hidden="true"></i></p>
+        <br>
+      <svg width="200" height="200">
+
+          <filter id="innerShadow" x="-20%" y="-20%" width="140%" height="140%">
+              <feGaussianBlur in="SourceGraphic" stdDeviation="3" result="blur"/>
+              <feOffset in="blur" dx="2.5" dy="2.5"/>
+          </filter>
+
+          <g>
+              <circle id="shadow" style="fill:rgba(0,0,0,0.1)" cx="97" cy="100" r="87" filter="url(#innerShadow)"></circle>
+              <circle id="circle" style="stroke: #FFF; stroke-width: 12px; fill:#636363" cx="100" cy="100" r="80"></circle>
+          </g>
+          <g>
+              <line x1="100" y1="100" x2="100" y2="55" transform="rotate(80 100 100)" style="stroke-width: 3px; stroke: #fffbf9;" id="hourhand">
+                  <animatetransform attributeName="transform"
+                                    attributeType="XML"
+                                    type="rotate"
+                                    dur="43200s"
+                                    repeatCount="indefinite"/>
+              </line>
+              <line x1="100" y1="100" x2="100" y2="40" style="stroke-width: 4px; stroke: #fdfdfd;" id="minutehand">
+                  <animatetransform attributeName="transform"
+                                    attributeType="XML"
+                                    type="rotate"
+                                    dur="3600s"
+                                    repeatCount="indefinite"/>
+              </line>
+              <line x1="100" y1="100" x2="100" y2="30" style="stroke-width: 2px; stroke: #C1EFED;" id="secondhand">
+                  <animatetransform attributeName="transform"
+                                    attributeType="XML"
+                                    type="rotate"
+                                    dur="60s"
+                                    repeatCount="indefinite"/>
+              </line>
+          </g>
+          <circle id="center" style="fill:#128A86; stroke: #C1EFED; stroke-width: 2px;" cx="100" cy="100" r="3"></circle>
+      </svg>
+          <h3>Balal Shah | University Project©</h3>
+          <ul class="social-icons icon-circle icon-rotate list-unstyled list-inline">
+         <li> <a href="https://www.facebook.com/iloveny/"><i class="fa fa-facebook"></i></a></li>
+         <li> <a href="https://github.com/"><i class="fa fa-github"></i></a></li>
+         <li> <a href="https://plus.google.com/+nytimes"><i class="fa fa-google-plus"></i></a></li>
+         <li> <a href="https://www.instagram.com/newyorkcity/?hl=en"><i class="fa fa-instagram"></i></a></li>
+         <li> <a href="https://twitter.com/nycgov?lang=en"><i class="fa fa-twitter"></i></a></li>
+         <li> <a href="https://www.youtube.com/user/TheNewYorkTimes"><i class="fa fa-youtube"></i></a></li>
+          </ul>
       </footer>
+      <script src="javascript/clock.js"></script>
+      <script src="javascript/nav.js"></script>
     </body>
     </html>
