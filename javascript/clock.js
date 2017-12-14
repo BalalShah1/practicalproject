@@ -11,7 +11,7 @@ function shifter(val) {
 }
 
 var date = new Date();
-var hoursAngle = 360 * date.getHours() - 4/ 12 + date.getMinutes();
+var hoursAngle = 360 * date.getHours()   / 12 + date.getMinutes();
 var minuteAngle = 360 * date.getMinutes() / 60;
 var secAngle = 360 * date.getSeconds() / 60;
 
