@@ -10,29 +10,17 @@
   <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
   <script src="https://use.fontawesome.com/cdaeee2f39.js"></script>
-  <title>New York Guide</title>
+  <title>Contact Us</title>
 </head>
 <body>
   <nav class="topnav" id="myTopnav">
-  <li style="float:right"><a href="index.html"><i class="fa fa-home fa-1.5x" aria-hidden="true"></i></a></li>
+  <a href="index.html"><i class="fa fa-home fa-1.5x" aria-hidden="true"></i></a>
   <a href="newandtrending.html">New & Trending</a>
   <a href="newyeareve.html">New Year's eve</a>
   <a href="contact.html" class="active">About Us</a>
   <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
 </nav>
-<script>
-function myFunction() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-        x.className += " responsive";
-    } else {
-        x.className = "topnav";
-    }
-}
-</script>
-
   <div class="parallax2">
-
   </div>
   <div class="content">
     <section>
@@ -54,41 +42,33 @@ NYC & Company provides resources for visitors to discover everything they need t
 <p>
  <div id="map"></div>
 <p>
-
-        <script>       function initMap() {
-      var uluru = {lat: 40.802560, lng: -73.959050};
-      var map = new google.maps.Map(document.getElementById('map'), {
-        zoom: 10,
-        center: uluru
-      });
-      var marker = new google.maps.Marker({
-        position: uluru,
-        map: map
-      });
-    }
-  </script>
-
-<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBjt8LBtx_29lAvUC7pVKyIrrpA3XqwKnY&callback=initMap"
-  type="text/javascript"></script>
 </section>
-<br>
-<br>
-<div class="parallax4">
+<div class="container">
+<form id="contact" method="post">
+    <h3>CONTACT US</h3>
+    <h4>Drop us a line, and we'll be in touch.</h4>
+    <fieldset>
+      <input placeholder="First Name*" type="text" tabindex="1" required>
+    </fieldset>
+    <fieldset>
+      <input placeholder="Last Name*" type="text" tabindex="2" required>
+    </fieldset>
+    <fieldset>
+      <input placeholder="Company*" type="text" tabindex="3" required>
+    </fieldset>
+    <fieldset>
+      <input placeholder="Title" type="tel" tabindex="4" required>
+    </fieldset>
+    <fieldset>
+    <input placeholder="Phone Number" type="tel" tabindex="5" required>
+    </fieldset>
+    <fieldset>
+    <input placeholder="Your Email Address*" type="email" tabindex="6" required>
+    </fieldset>
+    <h4>*Indicates a required field</h4>
+      <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+  </form>
 </div>
-<form id="contact">
-  <div class="container">
-    <div class="head">
-      <h2>Say Hello</h2>
-    </div>
-    <input type="text" name="name" placeholder="Name" /><br />
-    <input  type="email" name="email" placeholder="Email" /><br />
-    <textarea type="text" name="message" placeholder="Message"></textarea><br />
-    <div class="message">Message Sent</div>
-    <button id="submit" type="submit">
-      Send!
-    </button>
-  </div>
-</form>
 <br>
 <br>
 </div>
@@ -143,5 +123,9 @@ NYC & Company provides resources for visitors to discover everything they need t
     </ul>
 </footer>
 <script src="javascript/clock.js"></script>
+<script src="javascript/nav.js"></script>
+<script src="javascript/map.js"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBjt8LBtx_29lAvUC7pVKyIrrpA3XqwKnY&callback=initMap"
+  type="text/javascript"></script>
 </body>
 </html>
