@@ -1,5 +1,5 @@
 /*Start of Mobile Breakpoint */
-
+/*Global Breakpoint*/
 body {
   font: 15px/1.5 Arial, Helvetica, sans-serif;
   background-color: yellow;
@@ -8,14 +8,7 @@ body {
   height: 100%;
   width: 100%;
 }
-.container1 {
-  height: 1500px;
-}
-#content {
-  height: 500px;
-  margin-top: 10px;
-  margin-left: 10px;
-}
+
 h1 {
   color: #B2B2B2;
   font-family: 'Dosis', sans-serif;
@@ -61,6 +54,14 @@ p {
   font-weight: bold;
   padding-top: 50px;
   margin: 10px;
+}
+.container1 {
+  height: 1500px;
+}
+#content {
+  height: 500px;
+  margin-top: 10px;
+  margin-left: 10px;
 }
 .video {
   padding-left: 10px;
@@ -253,14 +254,7 @@ hr {
 .social-icons .fa-youtube-square {
   background-color: #C52F30;
 }
-footer {
-  position: bottom;
-  width: 100%;
-  height: 420px;
-  background-color: #282828;
-  color: #E2E2E2;
-  text-align: center;
-}
+
 .grow:hover {
   -webkit-transform: scale(0.7);
   -ms-transform: scale(0.7);
@@ -314,6 +308,15 @@ footer {
   padding-right: 20px;
   padding-top: 50px;
 }
+
+footer {
+  position: bottom;
+  width: 100%;
+  height: 420px;
+  background-color: #282828;
+  color: #E2E2E2;
+  text-align: center;
+}
 /* SECOND BREAKPOINT (TABLET SIZE) */
 
 @media screen and (min-width: 500px) {
@@ -321,16 +324,22 @@ footer {
     background-color: orange;
     font-family: arial;
   }
-  .container1 {
-    height: 1000px;
+
+  h1 {
+    color: #B2B2B2;
+    font-family: 'Dosis', sans-serif;
     max-width: 100%;
-    margin: 0 auto;
-    font-size: 24px;
-    padding: 25px;
+    font-size: 30px;
+    letter-spacing: 5px;
+    margin: 20px;
+    text-align: center;
+    -webkit-transition: all 0.7s ease;
+    transition: all 0.7s ease;
   }
-  #content {
-    height: 400px;
-    margin-top: 10px;
+  h1:hover {
+    color: #000000;
+    -webkit-transition: all 0.7s ease;
+    transition: all 0.7s ease;
   }
   h2 {
     color: #B2B2B2;
@@ -345,6 +354,18 @@ footer {
   }
   p {
     font-size: 15px;
+  }
+
+  .container1 {
+    height: 1000px;
+    max-width: 100%;
+    margin: 0 auto;
+    font-size: 24px;
+    padding: 25px;
+  }
+  #content {
+    height: 400px;
+    margin-top: 10px;
   }
   .parallax {
     background-image: url(http://www.schooltripworld.co.uk/assets/themes/leisureworld/library/images/lw-banner-1.jpg);
@@ -585,14 +606,6 @@ footer {
     padding-left: 10px;
     padding-right: 10px;
   }
-  footer {
-    position: bottom;
-    width: 100%;
-    height: 400px;
-    background-color: #282828;
-    color: #E2E2E2;
-    text-align: center;
-  }
   .grow:hover {
     -webkit-transform: scale(0.7);
     -ms-transform: scale(0.7);
@@ -680,14 +693,86 @@ footer {
     padding-right: 20px;
     padding-top: 50px;
   }
+  footer {
+    position: bottom;
+    width: 100%;
+    height: 400px;
+    background-color: #282828;
+    color: #E2E2E2;
+    text-align: center;
+  }
 }
 /* END OF SECOND BREAKPOINT */
-/* THIRD BREAKPOINT (DESKTOP SIZE) */
+
+
+/*  BREAKPOINT (DESKTOP SIZE) */
 
 @media screen and (min-width: 1200px) {
   body {
     background: red;
     font-family: arial;
+  }
+  h1 {
+    color: #B2B2B2;
+    font-family: 'Dosis', sans-serif;
+    max-width: 100%;
+    font-size: 30px;
+    letter-spacing: 5px;
+    margin: 20px;
+    text-align: center;
+    -webkit-transition: all 0.7s ease;
+    transition: all 0.7s ease;
+  }
+  h1:hover {
+    color: #000000;
+    -webkit-transition: all 0.7s ease;
+    transition: all 0.7s ease;
+  }
+  h2 {
+    color: #B2B2B2;
+    font-family: 'Dosis', sans-serif;
+    max-width: 100%;
+    font-size: 20px;
+    letter-spacing: 5px;
+    margin: 20px;
+    text-align: center;
+    -webkit-transition: all 0.7s ease;
+    transition: all 0.7s ease;
+  }
+  h3 {
+    color: #EEEEEE;
+    font-family: 'Dosis', sans-serif;
+    max-width: 100%;
+    font-size: 15px;
+    letter-spacing: 5px;
+    margin: 20px;
+    text-align: center;
+  }
+
+  h4  {
+    color: #EEEEEE;
+    font-family: 'Dosis', sans-serif;
+    max-width: 100%;
+    font-size: 15px;
+    letter-spacing: 5px
+  }
+  h5  {
+    color: #EEEEEE;
+    font-family: 'Dosis', sans-serif;
+    max-width: 100%;
+    font-size: 10px;
+    letter-spacing: 5px
+  }
+
+  p {
+    font-size: 10px;
+    max-width: 100%;
+    text-align: center;
+    color: #000000;
+    font-family: 'Poiret One', cursive;
+    font-weight: bold;
+    padding-top: 50px;
+    margin: 10px;
   }
   #content {
     height: 400px;
@@ -983,14 +1068,6 @@ footer {
   .social-icons .fa-youtube-square {
     background-color: #C52F30;
   }
-  footer {
-    position: bottom;
-    width: 100%;
-    height: 400px;
-    background-color: #282828;
-    color: #E2E2E2;
-    text-align: center;
-  }
   .grow:hover {
     -webkit-transform: scale(0.7);
     -ms-transform: scale(0.7);
@@ -1010,9 +1087,6 @@ footer {
   @keyframes fading {
     0% {
       opacity: 0
-    }
-    50% {
-      opacity: 1
     }
     article {
       max-width: 1500px;
@@ -1102,7 +1176,6 @@ footer {
     transition: all 0.7s ease;
     font-weight: bold;
   }
-}
 textarea {
   height: 100px;
   margin-bottom: 10px;
@@ -1207,6 +1280,17 @@ label.error {
 fa.fa-home {
   float: right;
 }
+
+footer {
+  position: bottom;
+  width: 100%;
+  height: 540px;
+  background-color: #282828;
+  color: #E2E2E2;
+  text-align: center;
+}
+
+}
 /* END OF THIRD BREAKPOINT */
 
 .topnav {
@@ -1217,7 +1301,7 @@ fa.fa-home {
   max-width: 100%;
 }
 .topnav a {
-  float: left;
+  float: right ;
   display: block;
   color: #f2f2f2;
   text-align: center;
