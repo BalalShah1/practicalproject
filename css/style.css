@@ -312,7 +312,7 @@ hr {
 footer {
   position: bottom;
   width: 100%;
-  height: 420px;
+  height: 550px;
   background-color: #282828;
   color: #E2E2E2;
   text-align: center;
@@ -696,7 +696,7 @@ footer {
   footer {
     position: bottom;
     width: 100%;
-    height: 400px;
+    height: 550px;
     background-color: #282828;
     color: #E2E2E2;
     text-align: center;
