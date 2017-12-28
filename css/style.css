@@ -342,13 +342,13 @@ footer {
   .social-icons.icon-rotate .fa:active {
     transform: scale(1.1) rotate(360deg);
   }
-  .social-icons .fa-facebook,{
+  .social-icons .fa-facebook{
     background-color: #3C599F;
   }
-  .social-icons .fa-github, {
+  .social-icons .fa-github{
     background-color: #070709;
   }
-  .social-icons .fa-google-plus,   {
+  .social-icons .fa-google-plus{
     background-color: #CF3D2E;
   }
   .social-icons .fa-html5 {
@@ -357,10 +357,10 @@ footer {
   .social-icons .fa-instagram {
     background-color: #A1755C;
   }
-  .social-icons .fa-twitter, {
+  .social-icons .fa-twitter{
     background-color: #32CCFE;
   }
-  .social-icons .fa-youtube,{
+  .social-icons .fa-youtube{
     background-color: #C52F30;
   }
   .video {
@@ -651,13 +651,13 @@ footer {
   .social-icons.icon-rotate .fa:active {
     transform: scale(1.1) rotate(360deg);
   }
-  .social-icons .fa-facebook,{
+  .social-icons .fa-facebook{
     background-color: #3C599F;
   }
-  .social-icons .fa-github, {
+  .social-icons .fa-github{
     background-color: #070709;
   }
-  .social-icons .fa-google-plus,   {
+  .social-icons .fa-google-plus{
     background-color: #CF3D2E;
   }
   .social-icons .fa-html5 {
@@ -666,10 +666,10 @@ footer {
   .social-icons .fa-instagram {
     background-color: #A1755C;
   }
-  .social-icons .fa-twitter, {
+  .social-icons .fa-twitter{
     background-color: #32CCFE;
   }
-  .social-icons .fa-youtube,{
+  .social-icons .fa-youtube{
     background-color: #C52F30;
   }
   .grow:hover {
@@ -818,13 +818,12 @@ height: 50%;
 width: 50%;
 }
 
-body { margin: 0; background: #; }
+body { margin: 0;
+}
 header {
   padding: .5vw;
   font-size: 0;
-  display: -ms-flexbox;
   flex-flow: row wrap;
-  display: -webkit-box;
   display: flex;
 }
 header div {
@@ -846,17 +845,10 @@ header div img {
 header {
   padding: .5vw;
   font-size: 0;
-  display: -ms-flexbox;
-  -ms-flex-wrap: wrap;
-  -ms-flex-direction: column;
-  -webkit-flex-flow: row wrap;
   flex-flow: row wrap;
-  display: -webkit-box;
   display: flex;
 }
 header div {
-  -webkit-box-flex: auto;
-  -ms-flex: auto;
   flex: auto;
   width: 200px;
   margin: .5vw;
