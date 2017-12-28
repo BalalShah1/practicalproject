@@ -4,7 +4,7 @@
 
 #Contributers: Balal Shah | P15226246
 
-#W3 Validator:![Screenshot](../img/w3.jpg) 
+#W3 Validator:![Screenshot](https://github.com/igetaroundd/practicalproject/blob/master/img/w3.jpg) 
 
 #Built With: HTML CSS JavaScript JSON
 
