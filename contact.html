@@ -1,143 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/ionicons.min.css">
-  <link rel="shortcut icon" href="img/logo2.png">
-  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Bungee" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
-  <script src="https://use.fontawesome.com/cdaeee2f39.js"></script>
-  <title>Contact Us</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/logo2.png">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bungee" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+    <script src="https://use.fontawesome.com/cdaeee2f39.js"></script>
+    <title>Contact Us</title>
 </head>
+
 <body>
-  <nav class="topnav" id="myTopnav">
-  <a href="index.html"><i class="fa fa-home fa-1.5x" aria-hidden="true"></i></a>
-  <a href="newandtrending.html">New & Trending</a>
-  <a href="newyeareve.html">New Year's eve</a>
-  <a href="contact.html" class="active">About Us</a>
-  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
-</nav>
-
-  <div class="content">
-    <section>
-    <h2>About NYC and Company</h2>
-    <p>NYC & Company is the official destination marketing organization for the five boroughs of New York City. Our mission is to maximize travel and tourism opportunities throughout the City, build economic prosperity and spread the dynamic image of New York City around the world.
-
-A 501(c) 6 private corporation, NYC & Company represents the interests of nearly 2,000 member organizations across the spectrum of businesses and organizations in the City.
-
-NYC & Company provides resources for visitors to discover everything they need to know about what to do and see in NYC. In addition to an integrated market development team in New York City with a focus on group, meeting/convention, leisure and events motivated travel, we have a global communications and market promotion network around the globe, including 17 representative offices on five continents, to promote visitation. Together with satellite convention sales offices in the US to develop group business, NYC & Company’s marketing efforts—both consumer and business facing—position the City to attract business and leisure travelers.</p>
-
-</section>
-<div class="parallax3">
-</div>
-<br>
-<br>
-<section>
-<h2>Map of New York</h2>
-
-<p>
- <div id="map"></div>
-<p>
-</section>
-<div class="container">
-<form id="contact" method="post">
-    <h3>CONTACT US</h3>
-    <h4>Drop us a line, and we'll be in touch.</h4>
-    <fieldset>
-      <input placeholder="First Name*" type="text" tabindex="1" required>
-    </fieldset>
-    <fieldset>
-      <input placeholder="Last Name*" type="text" tabindex="2" required>
-    </fieldset>
-    <fieldset>
-      <input placeholder="Company*" type="text" tabindex="3" required>
-    </fieldset>
-    <fieldset>
-      <input placeholder="Title" type="tel" tabindex="4" required>
-    </fieldset>
-    <fieldset>
-    <input placeholder="Phone Number" type="tel" tabindex="5" required>
-    </fieldset>
-    <fieldset>
-    <input placeholder="Your Email Address*" type="email" tabindex="6" required>
-    </fieldset>
-    <h4>*Indicates a required field</h4>
-      <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
-  </form>
-</div>
-<br>
-<br>
-</div>
-<section class="twitter">
-<a class="twitter-timeline" data-width="1200" data-height="500" href="https://twitter.com/nycgov?ref_src=twsrc%5Etfw"></a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-</section>
-<footer>
-<svg width="200" height="200">
-    <filter id="innerShadow" x="-20%" y="-20%" width="140%" height="140%">
-        <feGaussianBlur in="SourceGraphic" stdDeviation="3" result="blur"/>
-        <feOffset in="blur" dx="2.5" dy="2.5"/>
-    </filter>
-
-    <g>
-        <circle id="shadow" style="fill:rgba(0,0,0,0.1)" cx="97" cy="100" r="87" filter="url(#innerShadow)"></circle>
-        <circle id="circle" style="stroke: #FFF; stroke-width: 12px; fill:#636363" cx="100" cy="100" r="80"></circle>
-    </g>
-    <g>
-        <line x1="100" y1="100" x2="100" y2="55" transform="rotate(80 100 100)" style="stroke-width: 3px; stroke: #fffbf9;" id="hourhand">
-            <animatetransform attributeName="transform"
-                              attributeType="XML"
-                              type="rotate"
-                              dur="43200s"
-                              repeatCount="indefinite"/>
-        </line>
-        <line x1="100" y1="100" x2="100" y2="40" style="stroke-width: 4px; stroke: #fdfdfd;" id="minutehand">
-            <animatetransform attributeName="transform"
-                              attributeType="XML"
-                              type="rotate"
-                              dur="3600s"
-                              repeatCount="indefinite"/>
-        </line>
-        <line x1="100" y1="100" x2="100" y2="30" style="stroke-width: 2px; stroke: #C1EFED;" id="secondhand">
-            <animatetransform attributeName="transform"
-                              attributeType="XML"
-                              type="rotate"
-                              dur="60s"
-                              repeatCount="indefinite"/>
-        </line>
-    </g>
-    <circle id="center" style="fill:#128A86; stroke: #C1EFED; stroke-width: 2px;" cx="100" cy="100" r="3"></circle>
-</svg>
-    <h3>Balal Shah | University Project©</h3>
-    <ul class="social-icons icon-circle icon-rotate list-unstyled list-inline">
-   <li> <a href="https://www.facebook.com/iloveny/"><i class="fa fa-facebook"></i></a></li>
-   <li> <a href="https://github.com/"><i class="fa fa-github"></i></a></li>
-   <li> <a href="https://plus.google.com/+nytimes"><i class="fa fa-google-plus"></i></a></li>
-   <li> <a href="https://www.instagram.com/newyorkcity/?hl=en"><i class="fa fa-instagram"></i></a></li>
-   <li> <a href="https://twitter.com/nycgov?lang=en"><i class="fa fa-twitter"></i></a></li>
-   <li> <a href="https://www.youtube.com/user/TheNewYorkTimes"><i class="fa fa-youtube"></i></a></li>
-    </ul>
-    <h4>Sitemap ></h4>
-    <a href="contact.html"<h5>About Us</h5></a>
-    <br>
-    <a href="newandtrending.html"<h5>Trending</h5></a>
-    <br>
-    <a href="newyeareve.html"<h5>New year's eve</h5></a>
-    <br>
-    <a href="index.html"<h5>Home</h5></a>
-    <br>
-    <br>
-    <div id="time"></div>
-    <script src="javascript/year.js"></script>
-</footer>
-<script src="javascript/clock.js"></script>
-<script src="javascript/nav.js"></script>
-<script src="javascript/time.js"></script>
-<script src="javascript/map.js"></script>
-<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBjt8LBtx_29lAvUC7pVKyIrrpA3XqwKnY&callback=initMap"
-  type="text/javascript"></script>
+    <nav class="topnav" id="myTopnav">
+        <a href="index.html"><i class="fa fa-home fa-1.5x" aria-hidden="true"></i></a>
+        <a href="newandtrending.html">New & Trending</a>
+        <a href="newyeareve.html">New Year's eve</a>
+        <a href="contact.html" class="active">About Us</a>
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+    </nav>
+    <div class="parallax2">
+    </div>
+    <div class="content">
+        <section>
+            <h2>About NYC and Company</h2>
+            <p>NYC & Company is the official destination marketing organization for the five boroughs of New York City. Our mission is to maximize travel and tourism opportunities throughout the City, build economic prosperity and spread the dynamic image of New York City around the world. A 501(c) 6 private corporation, NYC & Company represents the interests of nearly 2,000 member organizations across the spectrum of businesses and organizations in the City. NYC & Company provides resources for visitors to discover everything they need to know about what to do and see in NYC. In addition to an integrated market development team in New York City with a focus on group, meeting/convention, leisure and events motivated travel, we have a global communications and market promotion network around the globe, including 17 representative offices on five continents, to promote visitation. Together with satellite convention sales offices in the US to develop group business, NYC & Company’s marketing efforts—both consumer and business facing—position the City to attract business and leisure travelers.
+            </p>
+        </section>
+        <div class="parallax3">
+        </div>
+        <div class="parallax4">
+        </div>
+        <div class="parallax6">
+        </div>
+        <div class="parallax5">
+        </div>
+        <br>
+        <br>
+        <section>
+            <h2>Map of New York</h2>
+            <p>
+                <div id="map"></div>
+                <p>
+        </section>
+        <section class="twitter">
+            <a class="twitter-timeline" data-width="1200" data-height="500" href="https://twitter.com/nycgov?ref_src=twsrc%5Etfw"></a>
+            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </section>
+        <div class="container">
+            <form id="contact" method="post">
+                <h3>CONTACT US</h3>
+                <h4>Drop us a line, and we'll be in touch.</h4>
+                <fieldset>
+                    <input placeholder="First Name*" type="text" tabindex="1" required>
+                </fieldset>
+                <fieldset>
+                    <input placeholder="Last Name*" type="text" tabindex="2" required>
+                </fieldset>
+                <fieldset>
+                    <input placeholder="Company*" type="text" tabindex="3" required>
+                </fieldset>
+                <fieldset>
+                    <input placeholder="Title" type="tel" tabindex="4" required>
+                </fieldset>
+                <fieldset>
+                    <input placeholder="Phone Number" type="tel" tabindex="5" required>
+                </fieldset>
+                <fieldset>
+                    <input placeholder="Your Email Address*" type="email" tabindex="6" required>
+                </fieldset>
+                <h4>*Indicates a required field</h4>
+                <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+            </form>
+        </div>
+        <br>
+        <br>
+    </div>
+    <footer>
+        <svg width="200" height="200">
+            <filter id="innerShadow" x="-20%" y="-20%" width="140%" height="140%">
+                <feGaussianBlur in="SourceGraphic" stdDeviation="3" result="blur" />
+                <feOffset in="blur" dx="2.5" dy="2.5" />
+            </filter>
+            <g>
+                <circle id="shadow" style="fill:rgba(0,0,0,0.1)" cx="97" cy="100" r="87" filter="url(#innerShadow)"></circle>
+                <circle id="circle" style="stroke: #FFF; stroke-width: 12px; fill:#636363" cx="100" cy="100" r="80"></circle>
+            </g>
+            <g>
+                <line x1="100" y1="100" x2="100" y2="55" transform="rotate(80 100 100)" style="stroke-width: 3px; stroke: #fffbf9;" id="hourhand">
+                    <animatetransform attributeName="transform" attributeType="XML" type="rotate" dur="43200s" repeatCount="indefinite" />
+                </line>
+                <line x1="100" y1="100" x2="100" y2="40" style="stroke-width: 4px; stroke: #fdfdfd;" id="minutehand">
+                    <animatetransform attributeName="transform" attributeType="XML" type="rotate" dur="3600s" repeatCount="indefinite" />
+                </line>
+                <line x1="100" y1="100" x2="100" y2="30" style="stroke-width: 2px; stroke: #C1EFED;" id="secondhand">
+                    <animatetransform attributeName="transform" attributeType="XML" type="rotate" dur="60s" repeatCount="indefinite" />
+                </line>
+            </g>
+            <circle id="center" style="fill:#128A86; stroke: #C1EFED; stroke-width: 2px;" cx="100" cy="100" r="3"></circle>
+        </svg>
+        <h3>Balal Shah | University Project©</h3>
+        <ul class="social-icons icon-circle icon-rotate list-unstyled list-inline">
+            <li> <a href="https://www.facebook.com/iloveny/"><i class="fa fa-facebook"></i></a></li>
+            <li> <a href="https://github.com/"><i class="fa fa-github"></i></a></li>
+            <li> <a href="https://plus.google.com/+nytimes"><i class="fa fa-google-plus"></i></a></li>
+            <li> <a href="https://www.instagram.com/newyorkcity/?hl=en"><i class="fa fa-instagram"></i></a></li>
+            <li> <a href="https://twitter.com/nycgov?lang=en"><i class="fa fa-twitter"></i></a></li>
+            <li> <a href="https://www.youtube.com/user/TheNewYorkTimes"><i class="fa fa-youtube"></i></a></li>
+        </ul>
+        <h4>Sitemap ></h4>
+        <a href="contact.html" <h5>About Us</h5>
+      </a>
+        <br>
+        <a href="newandtrending.html" <h5>Trending</h5>
+    </a>
+        <br>
+        <a href="newyeareve.html" <h5>New year's eve</h5>
+  </a>
+        <br>
+        <a href="index.html" <h5>Home</h5>
+</a>
+        <br>
+        <br>
+        <div id="time"></div>
+        <script src="javascript/year.js"></script>
+    </footer>
+    <script src="javascript/clock.js"></script>
+    <script src="javascript/nav.js"></script>
+    <script src="javascript/time.js"></script>
+    <script src="javascript/map.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBjt8LBtx_29lAvUC7pVKyIrrpA3XqwKnY&callback=initMap" type="text/javascript"></script>
 </body>
 </html>
